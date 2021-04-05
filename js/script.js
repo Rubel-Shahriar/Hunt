@@ -48,8 +48,6 @@ $('.banner-slider').slick({
     arrows: false,
     autoplay: true,
     fade: false,
-    // prevArrow: '<i class="fas fa-arrow-circle-left prev"></i>',
-    // nextArrow: '<i class="fas fa-arrow-circle-right next"></i>',
     responsive: [
       {
         breakpoint: 1024,
@@ -226,8 +224,6 @@ $('.web-slider').slick({
   fade: false,
   centerMode: true,
   centerPadding: "0",
-  // prevArrow: '<i class="fas fa-arrow-circle-left prev"></i>',
-  // nextArrow: '<i class="fas fa-arrow-circle-right next"></i>',
   responsive: [
     {
       breakpoint: 1024,

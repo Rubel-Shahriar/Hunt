@@ -34,19 +34,6 @@ body{
     margin-top: 30px;
     margin-bottom: 60px;
 }
-/* #banner-shape{
-    height: 100px;
-    background: #fff;
-    transform: skewX(-87deg);
-    transform-origin: left bottom;
-    position: relative;
-    top: -100px;        
-}
-#curved-shape{
-    transform: skewY(-3deg);
-    height: 100px;
-    background: #000;
-} */
 /* ==================nav bar css start================= */
 nav{
     background: transparent;
@@ -258,7 +245,7 @@ nav ul li a:hover::after{
     text-align: center;
     padding: 40px 35px;
     position: relative;
-    filter: drop-shadow(0 0 0.2rem crimson);
+    filter: drop-shadow(0 0 0.2rem #000);
 }
 #about-part .text .shape{
     position: absolute;
@@ -287,7 +274,7 @@ nav ul li a:hover::after{
     text-align: center;
     padding: 40px 35px;
     position: relative;
-    filter: drop-shadow(0 0 0.2rem crimson);
+    filter: drop-shadow(0 0 0.2rem #000);
 }
 #about-part .text1 .shape{
     position: absolute;
@@ -316,7 +303,7 @@ nav ul li a:hover::after{
     text-align: center;
     padding: 40px 35px;
     position: relative;
-    filter: drop-shadow(0 0 0.2rem crimson);
+    filter: drop-shadow(0 0 0.2rem #000);
 }
 #about-part .text2 .shape{
     position: absolute;
@@ -345,7 +332,7 @@ nav ul li a:hover::after{
     text-align: center;
     padding: 40px 35px;
     position: relative;
-    filter: drop-shadow(0 0 0.2rem crimson);
+    filter: drop-shadow(0 0 0.2rem #000);
 }
 #about-part .text3 .shape{
     position: absolute;
@@ -950,9 +937,6 @@ nav ul li a:hover::after{
     padding: 60px 0;
     transform: skewY(-3deg);
 }
-/* #website-part .web-slider{
-    transform: skewY(-4deg);
-} */
 #website-part .web{
     border: 1px solid #dddddd;
     background: #f1f1f1;
@@ -982,7 +966,7 @@ nav ul li a:hover::after{
     background: #222222;
     padding-top: 100px;
     padding-bottom: 40px;
-    margin-top: -40px;
+    margin-top: -50px;
 }
 #footer-part .icon{
     text-align: center;
