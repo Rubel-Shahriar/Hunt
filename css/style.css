@@ -1,0 +1,1063 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.title{
+    text-align: center;
+}
+.title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #000;
+}
+.title p{
+    margin: 0 auto;
+    width: 560px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+/* #banner-shape{
+    height: 100px;
+    background: #fff;
+    transform: skewX(-87deg);
+    transform-origin: left bottom;
+    position: relative;
+    top: -100px;        
+}
+#curved-shape{
+    transform: skewY(-3deg);
+    height: 100px;
+    background: #000;
+} */
+/* ==================nav bar css start================= */
+nav{
+    background: transparent;
+    border-bottom: 1px solid rgb(254, 198, 0, .2);
+    position: absolute !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+nav ul li{
+    margin-right: 30px;
+}
+nav ul li .active{
+    color: #fec600;
+}
+nav ul li .active::after{
+    width: 100%;
+    height: 3px;
+    background: #fec600;
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    transition: .4s;
+    content: "";
+}
+nav ul li a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: .4s;
+    position: relative;
+    padding: 0 !important;
+}
+nav ul li a:hover{
+    color: #fec600;
+}
+nav ul li a::after{
+    width: 0%;
+    height: 3px;
+    background: #fec600;
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    transition: .4s;
+    content: "";
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* ===============banner part css start================== */
+#banner-part{
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+#banner-part .banner{
+    background: url(../images/banner-hunt.png) no-repeat center;
+    background-size: cover;
+}
+#banner-part .banner1{
+    background: url(../images/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner-part .banner2{
+    background: url(../images/banner2.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner-part .banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .6);
+    text-align: center;
+    padding-top: 240px;
+    padding-bottom: 150px;
+}
+#banner-part .banner .overlay h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+}
+#banner-part .banner .overlay h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fec600;
+    text-transform: uppercase;
+}
+#banner-part .banner .overlay p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#banner-part .banner .overlay a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 20px;
+    background: #fec600;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    transition: .4s;
+}
+#banner-part .banner .overlay a:hover{
+    background: transparent;
+}
+#banner-part .banner .overlay .banner-anchor{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 20px;
+    background: transparent;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    transition: .6s;
+}
+#banner-part .banner .overlay .banner-anchor:hover{
+    background: #fec600;
+}
+#banner-part .prev{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: .4s;
+}
+#banner-part .prev:hover{
+    color: #fec600;
+}
+#banner-part .next{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: .4s;
+}
+#banner-part .next:hover{
+    color: #fec600;
+}
+/* =====================about part css start===================== */
+#about-part{
+    margin-top: 60px;
+}
+#about-part .title{
+    margin-top: -80px;
+}
+#about-part .title p{
+    margin-bottom: 0;
+}
+#about-part .round{
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    z-index: -1;
+}
+#about-part .round .image{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+#about-part .left{
+    display: flex;
+    align-items: center;
+}
+#about-part .round .image img{
+    width: 100%;
+    height: 100%;
+}
+#about-part h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+#about-part p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+#about-part .shape{
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+}
+#about-part .text{
+    background: #eeeeee;  
+    margin: 50px 0;
+    text-align: center;
+    padding: 40px 35px;
+    position: relative;
+    filter: drop-shadow(0 0 0.2rem crimson);
+}
+#about-part .text .shape{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+#about-part .text::after{
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    content: "";
+    transition: .4s;
+}
+#about-part .text:hover::after{
+    background: #fec600;
+}
+#about-part .text1{
+    background: #eeeeee;  
+    margin: 50px 0;
+    text-align: center;
+    padding: 40px 35px;
+    position: relative;
+    filter: drop-shadow(0 0 0.2rem crimson);
+}
+#about-part .text1 .shape{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#about-part .text1::after{
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    right: -73px;
+    content: "";
+    transition: .4s;
+}
+#about-part .text1:hover::after{
+    background: #fec600;
+}
+#about-part .text2{
+    background: #eeeeee;  
+    margin: 50px 0;
+    text-align: center;
+    padding: 40px 35px;
+    position: relative;
+    filter: drop-shadow(0 0 0.2rem crimson);
+}
+#about-part .text2 .shape{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#about-part .text2::after{
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: -53px;
+    content: "";
+    transition: .4s;
+}
+#about-part .text2:hover::after{
+    background: #fec600;
+}
+#about-part .text3{
+    background: #eeeeee;  
+    margin: 50px 0;
+    text-align: center;
+    padding: 40px 35px;
+    position: relative;
+    filter: drop-shadow(0 0 0.2rem crimson);
+}
+#about-part .text3 .shape{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#about-part .text3::after{
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    content: "";
+    transition: .4s;
+}
+#about-part .text3:hover::after{
+    background: #fec600;
+}
+/* ====================portfolio part css start===================== */
+#portfolio-part{
+     background: url(../images/portfolio-bg.jpg) no-repeat center;
+     background-size: cover;
+     margin-top: -30px;
+     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+#portfolio-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    padding: 120px 0;
+}
+#portfolio-part .overlay .title h2{
+    color: #fff;
+}
+#portfolio-part .overlay .title p{
+    color: #fff;
+}
+#portfolio-part .image{
+    position: relative;
+    margin: 20px 10px 0 10px;
+}
+#portfolio-part .image img{
+    width: 100%;
+    height: 100%;
+}
+#portfolio-part .image .img-overlay{
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+}
+#portfolio-part .image .img-overlay i{
+    font-size: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .4s;
+    transform: translate(-50%, -50%);
+    color: #000;
+    opacity: 0;
+}
+#portfolio-part .image:hover .img-overlay{
+    height: 100%;
+}
+#portfolio-part .image:hover .img-overlay i{
+    opacity: 1;
+}
+#portfolio-part .item:nth-child(even){
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* ===================service part css start====================== */
+#service-part{
+    margin-bottom: 130px;
+    position: relative;
+}
+#service-part .title p{
+    margin-bottom: 100px;
+}
+#service-part .vertical-shape{
+    position: absolute;
+    top: 170px;
+    left: 50%;
+}
+#service-part .service{
+    display: flex;
+    justify-content: space-between;
+}
+#service-part .service:nth-child(odd){
+    display: flex;
+    flex-direction: row-reverse;
+}
+#service-part .service .service-name{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#service-part .service:nth-child(odd) .service-name{
+    justify-content: flex-start;
+}
+#service-part .service .service-name h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+#service-part .service .service-image{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#service-part .service .service-image .image{
+    width: 80px;
+    height: 80px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+#service-part .service .service-text{
+    width: 40%;
+    background: #f1f1f1;
+    position: relative;
+}
+#service-part .service:nth-child(odd) .service-text .shape{
+    left: 100%;
+}
+#service-part .service .service-text .shape{
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#service-part .service .service-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    padding: 50px 30px;
+}
+#service-shape{
+    height: 100px;
+    background: yellow;
+    transform: skewX(-87deg);
+    transform-origin: left bottom;
+    position: relative;
+    top: -100px;
+}
+
+#service-part .service-prev{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    color: #000;
+    transition: .4s;
+}
+#service-part .service-prev:hover{
+    background: #fec600;
+}
+#service-part .service-next{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: -140px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    transition: .4s;
+}
+#service-part .service-next:hover{
+    background: #fec600;
+}
+#service-part .slick-center .service-image .image{
+    transform: scale(1.3);
+}
+/* ====================testimonial part css start====================== */
+#testimonial-part{
+    background: url(../images/team-banner.jpg) no-repeat center;
+    background-size: cover;
+    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+}
+#testimonial-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    padding: 160px 0;
+    display: flex;
+}
+#testimonial-part .repeat{
+    position: relative;
+}
+#testimonial-part .overlay .repeat .repeat-image{
+    background: url(../images/repeat-image2.jpg) repeat-y center;
+    width: 100%;
+    height: 490px;
+    position: absolute;
+}
+#testimonial-part .image-slide{
+    display: flex;
+    justify-content: center;
+}
+#testimonial-part .image-slide .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin: 30px 0;
+    transition: .4s;
+}
+#testimonial-part .slick-center .image{
+    transform: scale(1.3);
+    background: #fec600;
+}
+#testimonial-part .image-slide .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#testimonial-part .image-slide .image .image-overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#testimonial-part .slick-center .image .image-overlay{
+    opacity: 0;
+}
+#testimonial-part .slick-center .testi-image .image{
+    transform: scale(1.3);
+}
+#testimonial-part .testi-prev{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    color: #000;
+    transition: .4s;
+}
+#testimonial-part .testi-prev:hover{
+    background: #fec600;
+}
+#testimonial-part .testi-next{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    transition: .4s;
+}
+#testimonial-part .testi-next:hover{
+    background: #fec600;
+}
+#testimonial-part .align{
+    display: flex;
+    align-items: center;
+}
+#testimonial-part .text-slide{
+    width: 830px !important;
+    padding: 50px 30px;
+    background: url(../images/commma.image.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    margin-left: 50px;
+}
+#testimonial-part .text-slide h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 5px;
+}
+#testimonial-part .text-slide i{
+    display: inline-block;
+    font-size: 16px;
+    color: #fec600;
+}
+#testimonial-part .text-slide h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#testimonial-part .text-slide p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 770px;
+}
+#testimonial-part .text-slide .shape{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#testimonial-part .text-slide .signature{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+/* =================pricing part css start===================== */
+#pricing-part{
+    margin-top: 20px;
+}
+#pricing-part .pricing .title{
+    background: #353535;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    transition: .4s;
+}
+#pricing-part .pricing .title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+#pricing-part .pricing .round{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+#pricing-part .pricing .round .in-round{
+    width: 90px;
+    height: 90px;
+    background: #353535;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transition: .4s;
+}
+#pricing-part .pricing .round .in-round p{
+    color: #fff;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    position: relative;
+    margin-left: -10px;
+    transition: .4s;
+}
+#pricing-part .pricing .round .in-round .doller{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    transition: .4s;
+}
+#pricing-part .pricing .round .in-round .nine{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    right: 25px;
+    transition: .4s;
+}
+#pricing-part .pricing .round .in-round h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: -10px;
+    transition: .4s;
+}
+#pricing-part .pricing .list{
+    margin-top: -130px;
+    margin-bottom: -35px;
+}
+#pricing-part .pricing .list ul{
+    padding: 0;
+    text-align: center;
+    padding-top: 100px;
+    background: #f1f1f1;
+}
+#pricing-part .pricing .list ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+#pricing-part .pricing .button{
+    background: #353535;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    transition: .4s;
+}
+#pricing-part .pricing .button a{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+#pricing-part .pricing:hover .title{
+    background: #fec600;
+}
+#pricing-part .pricing:hover .title h2{
+    color: #000;
+}
+#pricing-part .pricing:hover .in-round{
+    background: #fec600;
+    color: #000;
+}
+#pricing-part .pricing:hover .in-round p{
+    color: #000;
+}
+#pricing-part .pricing:hover .in-round .doller{
+    color: #000;
+}
+#pricing-part .pricing:hover .in-round .nine{
+    color: #000;
+}
+#pricing-part .pricing:hover .in-round h5{
+    color: #000;
+}
+#pricing-part .pricing:hover .button{
+    background: #fec600;
+    color: #000;
+}
+/* ==================counterup part css start==================== */
+#counterup-part{
+    background: url(../images/counter-image.png) no-repeat center;
+    background-size: cover;
+    margin-top: 100px;
+    transform: skewY(-3deg);
+    background-attachment: fixed;
+}
+#counterup-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+}
+#counterup-part .overlay .total{
+    background: #000;
+    border: 3px solid #fff;
+    margin: 100px 0;
+    text-align: center;
+}
+#counterup-part .overlay .total .text{
+    width: 100%;
+    height: 100%;
+}
+#counterup-part .overlay .total .text p{
+    font-size: 20px;
+    color: #fff;
+    padding: 25px 0;
+}
+#counterup-part .overlay .total .text .number{
+    font-size: 30px !important;
+}
+#counterup-part .overlay .total .text h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    color: #fff;
+    padding-bottom: 25px;
+}
+/* ===================team-part css start==================== */
+#team-part{
+    margin: 60px 0;
+}
+#team-part .team{
+    border: 1px solid #dddddd;
+}
+#team-part .image{
+    background: #f1f1f1;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 100% 55%, 0 65%);}
+#team-part .image img{
+    width: 100%;
+    height: 100%;
+}
+#team-part .image .overlay{
+    width: 100%;
+    height: 0%;
+    background: rgba(254, 198, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .6s;
+}
+#team-part .image .overlay i{
+    font-size: 18px;
+    padding: 10px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .4s;
+}
+#team-part .text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+#team-part .text{
+    text-align: center;
+    margin-top: -120px;
+}
+#team-part .text h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+#team-part .text .icon i{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: #fff;
+    margin-top: 10px;
+    margin: 0 5px;
+    transition: .4s;
+    opacity: 0;
+}
+#team-part .team:hover .overlay{
+    height: 100%;
+}
+#team-part .team:hover .overlay i{
+    opacity: 1;
+}
+#team-part .team:hover .text .icon i{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    opacity: 1;
+}
+#team-part .text .icon i:hover{
+    background: #fec600;
+}
+/* ==================website part css start====================== */
+#website-part{
+    background: #f1f1f1;
+    padding: 60px 0;
+    transform: skewY(-3deg);
+}
+/* #website-part .web-slider{
+    transform: skewY(-4deg);
+} */
+#website-part .web{
+    border: 1px solid #dddddd;
+    background: #f1f1f1;
+    margin: 0 10px;
+}
+#website-part .slick-center{
+    border-color: #fec600;
+}
+#website-part .web img{
+    width: 100%;
+    height: 100%;
+    padding: 40px 10px;
+}
+/* ===================logo part css start==================== */
+#logo-part{
+    background: #222222;
+    text-align: center;
+    transform: skewY(-3deg);
+    border-bottom: 1px solid #f1f1f1;
+}
+#logo-part img{
+    padding: 30px 0;
+    background: #222222;
+}
+/* ===================footer part css start==================== */
+#footer-part{
+    background: #222222;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin-top: -40px;
+}
+#footer-part .icon{
+    text-align: center;
+}
+#footer-part .text{
+    text-align: center;
+    position: relative;
+    padding-right: 10px;
+}
+#footer-part .text .icon i{
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 50%;
+    background: #fec600;
+    margin-bottom: 20px;
+}
+#footer-part .text h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+#footer-part .text h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+#footer-part .text::after{
+    width: 1px;
+    height: 100%;
+    background: #555555;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+}
+/* ===================footer-follow part css start===================== */
+#footer-follow{
+    background: #222222;
+    text-align: center;
+    padding: 30px 0;
+}
+#footer-follow .follow h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+#footer-follow .follow .icon{
+    margin-top: 20px;
+
+}
+#footer-follow .follow .icon i{
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 50%;
+    background: #fff;
+    transition: .4s;
+    margin: 0 5px;
+}
+#footer-follow .follow .icon i:hover{
+    background: #fec600;
+}
+/* =====================footer-end part css start======================== */
+#footer-end{
+    background: #353535;
+    text-align: center;
+}
+#footer-end p{
+    font-size: 13px;
+    color: #fff;
+    padding: 20px;
+}
+#footer-end p span{
+    color: #fec600;
+}
+/* ========================END======================== */
