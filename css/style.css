@@ -907,10 +907,13 @@ nav ul li a:hover::after{
     color: #000;
 }
 #team-part .text .icon i{
+    width: 40px;
+    height: 40px;
     font-size: 18px;
-    padding: 10px;
     border-radius: 50%;
     border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
     background: #fff;
     margin-top: 10px;
     margin: 0 5px;
@@ -978,8 +981,11 @@ nav ul li a:hover::after{
 }
 #footer-part .text .icon i{
     font-size: 20px;
-    padding: 16px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
     background: #fec600;
     margin-bottom: 20px;
 }
@@ -1022,8 +1028,11 @@ nav ul li a:hover::after{
 }
 #footer-follow .follow .icon i{
     font-size: 20px;
-    padding: 16px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
     background: #fff;
     transition: .4s;
     margin: 0 5px;
