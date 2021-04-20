@@ -27,10 +27,12 @@ $('.banner-slider').slick({
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows:false,
+          autoplay: false,
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -114,10 +116,12 @@ $('.service-slider').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        vertical: false,
+        arrows: false,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -135,6 +139,7 @@ $('.testi-image-slider').slick({
   centerMode:true,
   centerPadding: "0",
   vertical: true,
+  fade: false,
   prevArrow: '<i class="fas fa-chevron-up testi-prev"></i>',
   nextArrow: '<i class="fas fa-chevron-down testi-next"></i>',
   asNavFor: ".testi-text-slider",
@@ -176,8 +181,8 @@ $('.testi-text-slider').slick({
   slidesToScroll: 1,
   arrows: false,
   vertical: true,
-  asNavFor: ".testi-image-slider",
   fade: false,
+  asNavFor: ".testi-image-slider",
   responsive: [
     {
       breakpoint: 1024,

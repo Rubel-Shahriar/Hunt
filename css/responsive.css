@@ -1,0 +1,111 @@
+@media (min-width: 320px) and (max-width: 575px){
+    /* common part */
+    .title{
+        margin: 20px;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+    .title p{
+        width: auto;
+        margin: 15px 0;
+    }
+    /* nav bar part */
+    nav{
+        position: relative;
+    }
+    .navbar-toggler:focus{
+        box-shadow: 0 0 0 0;
+    }
+    nav button i{
+        color: #fff;
+    }
+    nav ul{
+        text-align: center;
+        background: rgb(117, 11, 20);
+        padding: 10px 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+    nav ul li{
+        margin-right: 0;
+    }
+    nav ul li .active{
+        color: #fff;
+    }
+    nav ul li .active::after{
+        width: 0;
+    }
+    nav ul li a{
+        display: block;
+    }
+    nav ul li a:hover::after{
+        width: 0;
+    }
+    /* banner part */
+    #banner-part .banner .overlay{
+        padding-top: 111px;
+        padding-bottom: 60px;
+    }
+    #banner-part .banner .overlay h3{
+        font-size: 20px;
+    }
+    #banner-part .banner .overlay h1{
+        font-size: 40px;
+    }
+    #banner-part .banner .overlay p{
+        width: auto;
+        margin-top: 7px;
+        margin-bottom: 20px;
+    }
+    /* about part */
+    #about-part .title{
+        margin-top: -60px;
+    }
+    #about-part .round{
+        display: none;
+    }
+    #about-part .text{
+        margin: 10px 0;
+    }
+    #about-part .text1{
+        margin: 10px 0;
+    }
+    #about-part .text2{
+        margin: 10px 0;
+    }
+    #about-part .text3{
+        margin: 10px 0;
+    }
+    #about-part .shape{
+        width: 0;
+    }
+    #about-part .text::after{
+        width: 0rem;
+    }
+    #about-part .text1::after{
+        width: 0rem;
+    }
+    #about-part .text2::after{
+        width: 0rem;
+    }
+    #about-part .text3::after{
+        width: 0rem;
+    }
+    /* portfolio part */
+    #portfolio-part{
+        clip-path: none;
+        margin-top: 10px;
+    }
+    #portfolio-part .overlay{
+        padding: 10px 0;
+    }
+    #service-part .vertical-shape img{
+        display: none;
+    }
+    #service-part .service .service-text .shape{
+        width: 0;
+    }
+}
