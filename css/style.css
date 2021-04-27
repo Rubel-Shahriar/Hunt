@@ -546,6 +546,16 @@ nav ul li a:hover::after{
     background-size: cover;
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
 }
+#testimonial-part .display-flex{
+    display: flex;
+}
+#testimonial-part .overlay .left-hand-side{
+    width: 20%;
+}
+#testimonial-part .overlay .right-hand-side{
+    width: 75%;
+    margin-top: 68px;
+}
 #testimonial-part .overlay{
     width: 100%;
     height: 100%;
@@ -640,7 +650,6 @@ nav ul li a:hover::after{
     align-items: center;
 }
 #testimonial-part .text-slide{
-    width: 830px !important;
     padding: 50px 30px;
     background: url(../images/commma.image.jpg) no-repeat center;
     background-size: cover;
@@ -671,7 +680,7 @@ nav ul li a:hover::after{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    width: 770px;
+    width: 750px;
 }
 #testimonial-part .text-slide .shape{
     width: 40px;
@@ -859,6 +868,7 @@ nav ul li a:hover::after{
 }
 #team-part .team{
     border: 1px solid #dddddd;
+    margin: 0 10px;
 }
 #team-part .image{
     background: #f1f1f1;

@@ -11,19 +11,22 @@ $('.banner-slider').slick({
     nextArrow: '<i class="fas fa-arrow-circle-right next"></i>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+          arrows: false,
+          dots: true,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         }
       },
       {
@@ -32,7 +35,7 @@ $('.banner-slider').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows:false,
-          autoplay: false,
+          dots: true,
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -52,12 +55,12 @@ $('.banner-slider').slick({
     fade: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false,
         }
       },
       {
@@ -100,19 +103,25 @@ $('.service-slider').slick({
   nextArrow: '<i class="fas fa-chevron-down service-next"></i>',
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 992,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        vertical: false,
         infinite: true,
-        dots: true
+        dots: true,
+        arrows: false,
+        centerMode: false,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: false,
+        arrows: false,
+        dots: true,
       }
     },
     {
@@ -122,6 +131,7 @@ $('.service-slider').slick({
         slidesToScroll: 1,
         vertical: false,
         arrows: false,
+        dots: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -145,26 +155,32 @@ $('.testi-image-slider').slick({
   asNavFor: ".testi-text-slider",
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 992,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
-        dots: true
+        vertical: false,
+        arrows: false,
+        dots: false,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        vertical:false,
+        arrows:false,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        vertical: false,
+        arrows: false,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -185,26 +201,31 @@ $('.testi-text-slider').slick({
   asNavFor: ".testi-image-slider",
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 992,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: false,
         infinite: true,
-        dots: true
+        dots: true,
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: false,
+        dots: true,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        vertical: false,
+        dots: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -216,6 +237,49 @@ $('.testi-text-slider').slick({
 $('.counter').counterUp({
   delay: 10,
   time: 1000
+});
+
+$('.team-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  fade: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows:false,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+        dots: true,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 $('.web-slider').slick({
@@ -231,19 +295,20 @@ $('.web-slider').slick({
   centerPadding: "0",
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 992,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 2,
         infinite: true,
-        dots: true
+        dots: false,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1,
+        centerMode: false,
       }
     },
     {
